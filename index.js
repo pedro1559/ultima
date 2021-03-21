@@ -80,7 +80,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:ninem gostoso\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=556993733828 (69) 9373-3829\n' // ID do WhatsApp + número de telefone
+            + 'TEL;type=CELL;type=VOICE;waid=5512996299061 (12) 99629-9061\n' // ID do WhatsApp + número de telefone
             + 'END:VCARD'
 /******END OF VCARD INPUT******/
 
@@ -269,7 +269,7 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["556993733829@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["5512996299061@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -287,7 +287,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '556993733829@s.whatsapp.net'
+                        const NomerOwner = '5512996299061@s.whatsapp.net'
                         /******ApiKey Input******/
                         const BarBarKey = 'YOUR_APIKEY'
                         /******End of ApiKey Input******/
@@ -833,7 +833,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 ninem BOT 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Pedro BOT 〙', text, {quoted: mek})
 					break
                 case 'tagall3':
 				client.updatePresence(from, Presence.composing) 
@@ -846,7 +846,7 @@ case 'timer':
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 ninem BOT 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Pedro BOT 〙', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
 				client.updatePresence(from, Presence.composing) 
@@ -859,7 +859,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 ninem BOT 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Pedro BOT 〙', text, {quoted: mek})
 					break
                 case 'tagall5':
 				client.updatePresence(from, Presence.composing) 
@@ -872,7 +872,7 @@ case 'timer':
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 ninem BOT 〙')
+					reply('╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Pedro BOT 〙')
 					break
 				case 'send':
 					var pc = body.slice(6)
